@@ -1,0 +1,874 @@
+          /*  Reset  */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+title{
+  font-family: 'Raleway', sans-serif;
+}
+
+body{
+  -webkit-font-smoothing: antialiased;
+}
+
+button:focus{
+  outline: none;
+}
+
+.container{
+  width: 100%;
+  padding: 0px 15px;
+   margin: 0 auto; /*for bringing in center */
+  }
+
+  :root{
+    --dark: rgb(36, 34, 34);
+    --yellow: rgb(252, 215, 7);
+    --light: rgb(248, 211, 187);
+  }
+
+  /*  Media queries for Responsiveness*/
+  @media (min-width: 576px){
+
+    .container{
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px){
+
+    .container{
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px){
+
+    .container{
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1200px){
+
+    .container{
+      max-width: 1152px;
+    }
+  }
+
+                    /* Header Area */
+  header.top-bar{
+    background-color: var(--dark);
+    font-family: 'Raleway', 'sans-serif';
+    padding: 0.75rem 0;
+  }
+
+  header.top-bar .container .auth{
+    flex-direction: row;
+  }
+
+  .top-bar .icons a{
+    margin-right: 0.7rem;
+  }
+
+  .top-bar .auth > div a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .top-bar .auth div img{
+    padding: 0 0.4rem;
+  }
+
+  .top-bar .auth .divider{
+    color: white;
+    padding: 1rem;
+  }
+
+                  /*  Nav Section  */
+
+                  /*  Top Bar*/
+nav .top{
+padding: 1.5rem 0;
+}
+
+nav .top .contact img, nav .top .time img{
+  margin-right: 1rem;
+}
+
+nav .top .contact h5, nav .top .time h5{
+  font-family: 'Raleway';
+  margin-bottom: 0.25rem;
+}
+
+nav .top .contact h6, nav .top .time h6{
+  font-family: 'Raleway';
+  letter-spacing: 0.06rem;
+  font-size: .75rem;
+  color: rgb(61, 45, 45);
+}
+
+                  /* NavBar Section*/
+
+nav .navbar a{
+  text-decoration: none;
+  color: var(--dark);
+  font-family: 'Raleway';
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  
+}
+
+nav .navbar a.active{
+  background-color: var(--yellow);
+  color: white;
+}
+
+nav .navbar a:hover{
+  background-color: var(--yellow);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+                  /*  Hero Section    */
+
+header.hero{
+  height: 550px;
+  width: 100%;
+  background: url(../images/hero.png);
+  background-position: 0%;
+  font-family: 'Raleway';
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header.hero .container{
+position: relative;
+}
+
+header.hero .welcome{
+margin-top: 1rem;
+}
+
+header.hero .welcome span{
+/* font-family: 'Raleway'; */
+margin-right: .75rem;
+font-weight: 500;
+}
+
+header.hero h1{
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+
+header.hero p{
+  line-height: 1.5rem;
+  width: 60%;
+}
+
+header.hero button{
+  text-decoration: none;
+  color: white;
+  padding: .57rem .75rem;
+  margin: .55rem .55rem;
+  border-radius: 5px;
+  line-height: 0.8; 
+  /* so that we can fix the distance as raleway font has some height problem for the content */
+  font-size: 1.2rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.btn-primary{
+  background-color: var(--yellow);
+}
+
+.btn-primary:hover{
+  background-color: white;
+  color: var(--yellow);
+  transition: all .4s ease-out;
+  border: 1px solid var(--yellow);
+}
+
+.btn-secondary{
+  background-color: black;
+  color: white;
+  padding: .7rem;
+  border: none;
+}
+
+.btn-secondary:hover{
+  background-color: white;
+  color: var(--dark);
+  border: 1px solid black !important;
+  transition: all .4s ease-out;
+}
+
+.straw{
+  width: 350px;
+  height: 300px;
+ padding-top: 2rem;
+ padding-left: 2rem;
+}
+
+                  /* Top-Products Section */
+section.top-products{
+  padding: 4rem 0rem;
+  background-color: var(--light);
+}
+
+.section-heading{
+  font-family: 'Raleway';
+  font-weight: 600;
+ position: relative;
+  margin-bottom: 6rem;
+}
+
+.section-heading::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-image: url('../icons/hr.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -40px;
+}
+
+section.top-products .btn-wrapper .btn{
+  background-color: black;
+  color: white;
+  padding: .6rem;
+  margin-top: 2rem;
+  border-radius: 3px;
+  border: 1.5px solid black;
+  font-family: 'Raleway';
+}
+
+section.top-products .btn-wrapper .btn:hover{
+background-color: white;
+color: black;
+font-weight: 500;
+}
+
+section.top-products .slider{
+position: relative;
+}
+
+section.top-products .slider .slider-btn{
+background-color: var(--yellow);
+position: absolute;
+width: 1rem;
+height: 1rem;
+}
+
+section.top-products .slider .slider-btn img{
+  background-position: center;
+}
+
+section.top-products .slider .prev-btn{
+  left: -1rem;
+  top: 46%;
+  z-index: 1;
+}
+
+section.top-products .slider .next-btn{
+  right: -1rem;
+  top: 46%;
+}
+
+section.top-products .food-slider .food-card{
+  background-color: white;
+  /* background-color: rgb(97, 90, 77); */
+  padding: 1.5rem 0;
+  border-radius: 4px;
+  margin: 0 27px;
+  width: 20%;
+}
+section.top-products .food-slider .food-card .product-img > img{
+  width: 80%;
+  height: 200px;
+  object-fit: contain;
+  padding-bottom: 1rem;
+}
+
+section.top-products .food-slider .food-card .stars img{
+margin-right: .25rem;
+}
+
+section.top-products .food-slider .food-card .price{
+  font-family: 'Raleway';
+  color: red;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+}
+
+section.top-products .food-slider .food-card button{
+  font-family: 'Raleway';
+  font-weight: 400;
+  background-color: white;
+  color: var(--dark);
+  border: 2px solid var(--yellow);
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 80%;
+  transition: all .3s ease;
+  padding: .1rem;
+}
+
+section.top-products .food-slider .food-card button:hover{
+  background-color: var(--yellow);
+}
+
+section.top-products .food-slider .food-card button img{
+  background-color: var(--yellow);
+  width: 2rem;
+  height: 1.5rem;
+  padding: 0 .5rem;
+  margin-right: 1.2rem;
+}
+
+hr{
+  border: 1px solid var(--light);
+  opacity: .8;
+  margin: 1rem 0;
+}
+
+section.top-products .food-slider .food-card h2{
+  font-family: 'Raleway';
+  font-size: 1.3rem;
+  margin-bottom: .25rem;
+}
+
+                  /*  About Meals Section  */
+section.about-meal{
+  height: 500px;
+font-family: 'Raleway';
+}
+
+section.about-meal
+{
+  font-family: 'Raleway';
+  font-weight: 800;
+  margin-top: 3rem;
+}
+
+section.about-meal .about-meal-wrap img{
+  width: 80%;
+  margin-top: -3rem;
+}
+
+section.about-meal h2{
+font-size: 1.4rem;
+color: black;
+margin-bottom: 2rem;
+line-height: 1.3;
+}
+
+section.about-meal p{
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+section.about-meal .btn-meal{
+  color: white;
+  padding: 0.4rem .7rem;
+  border-radius: 4px;
+  position: relative;
+  left: 40%;
+  font-size: large;
+}
+
+section.about-meal .btn-meal:hover{
+  color: black;
+  transition: all .3s ease;
+}
+
+                  /* Our Services Section */
+
+section.our-services{
+  padding-top: 2.5rem;
+  background-color: var(--light);
+  font-family: 'Raleway';
+  height: 550px;
+  position: relative;
+  z-index: 0;
+}
+
+section.our-services .container > h1{
+  font-size: 32px;
+}
+
+section.our-services .container  h1{
+  margin-top: 1.5rem;
+}
+
+section.our-services .card-wrapper{
+  margin-right: -2rem;
+  margin-top: 8rem;
+}
+
+section.our-services .service-card{
+  background-color: white;
+  margin-right: 2rem;
+  padding: 2rem;
+  padding-top: 4rem;
+  position: relative;
+  border-radius: 4px;
+
+}
+
+section.our-services .service-card .icon{
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section.our-services .service-card .yellow-text{
+color: var(--yellow);
+}
+
+section.our-services .service-card h2{
+font-size: 1.3rem;
+margin-bottom: 1rem;
+}
+
+section.our-services .service-card p{
+  line-height: 1.5rem;
+}
+
+section.our-services .service-card button{
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+section.our-services .service-card button:hover{
+    border: 2px solid black;
+}
+
+                  /* Deals Section*/
+
+section.big-deals{
+  padding-top: 2.5rem;
+  font-family: 'Raleway';
+  background: linear-gradient(
+    rgba(44, 54, 70, 0.9),
+    rgba(35, 43, 56, 0.9)  /*Applying gradient background*/
+  ), url(../images/food-table.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 2rem;
+}
+
+section.big-deals .container > h1{
+font-size: 28px;
+}
+
+section.big-deals .timer div{
+  background-color: var(--yellow);
+  width: 150px;
+  height: 150px;
+  flex-direction: column;
+  margin-right: 2rem;
+  border-radius: 5px;
+}
+
+section.big-deals .timer div h1{
+  font-size: 38px;
+}
+
+                  /* Latest News Section*/
+
+section.latest-news{
+  position: relative;
+  z-index: 0;
+  padding-top: 2rem;
+  background-color: var(--light);
+  font-family: 'Raleway';
+}
+
+section.latest-news .container button{
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+section.latest-news .container .article-wrapper{
+  margin-right: -2rem;
+}
+
+section.latest-news .container .article-wrapper .news-card{
+background-color: white;
+margin-right: 2rem;
+border-radius: 5px;
+width: 35%;
+margin-bottom: 2rem;
+}
+
+section.latest-news .container .article-wrapper .news-card img{
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0rem;
+}
+
+section.latest-news .container .article-wrapper .news-card .post-meta, h3, p{
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+section.latest-news .container .article-wrapper .news-card .post-meta{
+  margin-top: 1rem;  
+}
+
+/* 
+section.latest-news .container div .news-card .content span:nth-child(2){
+  margin-right: .7rem;
+} */
+
+section.latest-news .container div .news-card .post-meta span{
+font-size: 13px;
+margin-right: 1rem;
+}
+
+section.latest-news .container div .news-card h3{
+font-size: 1rem;
+line-height: 1.5rem;
+margin-top: .6rem;
+}
+
+section.latest-news .container div .news-card p{
+margin-top: .6rem;
+line-height: 1.5rem;
+margin-bottom: 2rem;
+word-wrap: break-word;
+}
+
+                  /*  News Letter Section*/
+
+section.news-letter{
+  background-color: var(--yellow);
+  font-family: 'Raleway';
+}                  
+
+section.news-letter .wrapper{
+  padding: 3rem;
+}
+
+section.news-letter .wrapper div img{
+  width: 80%;
+  float: right;
+  margin-right: 2rem;
+}
+section.news-letter .wrapper .content{
+  margin-top: 1rem;
+}
+
+section.news-letter .wrapper .content h2{
+  font-size: 1.5rem;
+}
+
+section.news-letter .wrapper .content p{
+  line-height: 1.5rem;
+  font-weight: 500;
+  padding: 0rem;
+  margin-top: 1rem;
+}
+
+section.news-letter .wrapper .content .input-wrap{
+background-color: white;
+padding: .7rem;
+margin: 1rem 0rem;
+border-radius: 4px;
+}
+
+section.news-letter .wrapper .content .input-wrap input{
+  padding: .6rem;
+  width: 75%;
+  border: none;
+  color: var(--dark);
+  font-weight: 400;
+}
+
+section.news-letter .wrapper .content .input-wrap input:focus{
+ outline: none;
+}
+
+section.news-letter .wrapper .content .input-wrap button{
+  cursor: pointer;
+  padding: .7rem;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+section.news-letter .wrapper .content .input-wrap button:hover{
+  background: black;
+  transition: all .3s ease;
+}
+
+                  /* Contact Section*/
+
+section.contact{
+  padding: 0%;
+  font-family: 'Raleway';
+}
+
+section.contact div .contact-us div > div:first-child{
+  margin-left: -3rem;
+}
+
+section.contact div .contact-us div > div{
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+section.contact div .contact-us div > div > div{
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+section.contact div .contact-us div > div > div span:first-child{
+  font-weight: 600;
+  margin-bottom: .4rem;
+}
+
+section.contact div .contact-us div > div > div span:first-child .text{
+  text-align: left;
+}
+
+/* section.contact div .contact-us .call, .email, .work{
+  
+} */
+
+/* section.contact div .contact-us .call div, section.contact div .contact-us .email div, section.contact div .contact-us .work div{
+ 
+} */
+/* 
+section.contact div .contact-us .call div span:first-child, 
+section.contact div .contact-us .email div span:first-child, 
+section.contact div .contact-us .work div span:first-child{
+  
+} */
+
+section.contact div .contact-us h2{
+  margin-top: 3rem;
+  font-weight: 600;
+}
+
+section.contact div .contact-us img{
+  margin-right: 1rem;
+}
+
+section.contact  div .map{
+ filter: grayscale(100%); 
+ /*  Used to make element look black and white */
+}
+
+                  /* Footer Section*/
+
+footer{
+  padding: 4rem 0rem;
+  background-color: rgb(25, 29, 39);
+}
+
+footer .container{
+color: white;
+}
+
+footer .box{
+  flex: 1;
+  flex-direction: column;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+footer .box li{
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+footer .box ul li a{
+text-decoration: none;
+color: white;
+transition: all .5s ease;
+}
+
+footer .box ul li a:hover{
+  color: var(--yellow);
+}
+
+footer .box h3{
+  border-bottom: 1px solid var(--yellow);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .box button{
+  width: 50%;
+  text-align: center;
+  position: relative;
+  left: 20%;
+}
+
+footer .box p{
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+footer .box:nth-child(3){
+  margin-top: -1.3rem;
+}
+
+footer .box:nth-child(3){
+text-align: left;
+}
+
+footer .box:nth-child(3) h3{
+  text-align: center;
+}
+
+footer .box:nth-child(3) ul li{
+  margin-top: 1.5rem;
+}
+
+footer .box:nth-child(3) > div img{
+  margin-right: 1rem;
+}
+
+footer .box:nth-child(3) span{
+ cursor: pointer;
+ transition: all .3s ease;
+}
+
+footer .box:nth-child(3) span:hover{
+  color: var(--yellow);
+ }
+
+footer .instagram-api img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+footer .instagram-api .post-wrapper{
+  flex-wrap: wrap;
+  /* so that if there is not sufficient space on samle line, the elements will be shifted to new line*/
+  justify-content: space-between;
+}
+
+footer .instagram-api .post-wrapper > div{
+width: calc(1/3*100% - (1 - 1/3)* 10px);
+/*10px width is taken in account for the horizontal gap between images */
+margin-bottom: 10px;
+}
+
+                      /* Copyright Secion Last*/
+
+footer.copyright{
+  background-color: rgb(9, 9, 31);
+  padding: 1rem 0rem;
+}
+
+footer.copyright div{
+  color: white;
+  font-size: .75rem;
+  text-align: center;
+}
+
+footer.copyright div a{
+color: var(--yellow);
+text-decoration: none;
+}
+
+                  /* Utility Classes */
+  .flex{
+    display: flex;
+  }
+
+  .flex-1{
+    flex: 1; /* flex=1 is used to allocate equal space to 2 elements with flex*/
+  }
+
+  .justify-center{
+    justify-content: center;
+  }
+
+  .justify-between{
+    justify-content: space-between;
+  }
+
+  .items-center{
+    align-items: center;
+  }
+
+  .text-center{
+    text-align: center;
+  }
+
+  .back-yellow{
+    background-color: var(--yellow);
+  }
+
+  .text-white{
+    color: white;
+  }
+
+  .justify-center{
+    justify-content: center;
+  }
+
+  .justify-around{
+    justify-content: space-around;
+  }
+
+  .magic-shadow{
+    position: relative;
+    background-color: white;
+  }
+
+  .magic-shadow:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow.svg);
+    bottom: -20px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .magic-shadow-sm{
+    position: relative;
+    background-color: var(--light);
+  }
+
+  .magic-shadow-sm:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow-sm.svg);
+    bottom: -20px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
